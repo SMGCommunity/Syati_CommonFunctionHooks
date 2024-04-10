@@ -1,1 +1,1 @@
-A Template for making Syati Modules
+Provides access to hook common functions used in the game.
