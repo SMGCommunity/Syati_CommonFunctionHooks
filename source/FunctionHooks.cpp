@@ -51,4 +51,16 @@ namespace
 #elif defined(TWN) || defined(KOR)
     kmBranch(0x804B6B44, handleGameSystemFrameLoop);
 #endif
+
+    // ----------------------------------------------------------------------------------------------------------------
+    // Events to be handled after GameScene::update
+
+    void handleGameSceneUpdate() {
+        for (s32 i = 1; i < cModuleGameSceneUpdateTableCount; i++)
+        {
+            cModuleGameSceneUpdateTable[i]();
+        }
+    }
+
+    kmBranch(0x804518CC, handleGameSceneUpdate);
 }

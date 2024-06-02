@@ -63,6 +63,26 @@
           "ReplaceFormatData": "#include \"{2}\""
         }
       ]
+    },
+    {
+      "Name": "OnGameSceneUpdate",
+      "CodeGenSource": "GEN_FunctionHooks.h",
+      "CodeGenDestination": "codebuild/ModuleData_FunctionHooks.h",
+      "Variables": [
+        "Name",
+        "Function",
+        "Include"
+      ],
+      "CodeGenData": [
+        {
+          "ReplaceTargetName": "GameSceneUpdateList",
+          "ReplaceFormatData": "{1}, //{0}"
+        },
+        {
+          "ReplaceTargetName": "IncludeListGameSceneUpdate",
+          "ReplaceFormatData": "#include \"{2}\""
+        }
+      ]
     }
   ]
 }

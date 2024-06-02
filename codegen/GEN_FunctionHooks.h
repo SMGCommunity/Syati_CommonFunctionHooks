@@ -3,6 +3,7 @@
 {{IncludeListOnGameSceneStart}}
 {{IncludeListAnySceneDestroyed}}
 {{IncludeListGameSystemFrameLoop}}
+{{IncludeListGameSceneUpdate}}
 
 typedef void (*HookFuncDef)();
 
@@ -25,3 +26,9 @@ const HookFuncDef cModuleGameSystemFrameLoopTable[] = {
 {{GameSystemFrameLoopList}}
 };
 const s32 cModuleGameSystemFrameLoopTableCount = sizeof(cModuleGameSystemFrameLoopTable) / sizeof(HookFuncDef);
+
+const HookFuncDef cModuleGameSceneUpdateTable[] = {
+    NULL,
+{{GameSceneUpdateList}}
+};
+const s32 cModuleGameSceneUpdateTableCount = sizeof(cModuleGameSceneUpdateTable) / sizeof(HookFuncDef);
