@@ -1,6 +1,6 @@
 {
   "Name": "Syati Common Functions",
-  "Author": "",
+  "Author": "[Primary Module]",
   "Description": "Provides access to hook common functions used in the game.",
 
   "ModuleExtensionDefinition": [
